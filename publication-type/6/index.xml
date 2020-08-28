@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>6 | Yuri Pritykin</title>
+    <link>https://pritykin.github.io/publication-type/6/</link>
+      <atom:link href="https://pritykin.github.io/publication-type/6/index.xml" rel="self" type="application/rss+xml" />
+    <description>6</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 20 Sep 2009 00:00:00 -0400</lastBuildDate>
+    <image>
+      <url>https://pritykin.github.io/media/YuriPritykin.jpg</url>
+      <title>6</title>
+      <link>https://pritykin.github.io/publication-type/6/</link>
+    </image>
+    
+    <item>
+      <title>О логических теориях и конечных автоматах на бесконечных последовательностях</title>
+      <link>https://pritykin.github.io/publication/2009-logical-theories/</link>
+      <pubDate>Sun, 20 Sep 2009 00:00:00 -0400</pubDate>
+      <guid>https://pritykin.github.io/publication/2009-logical-theories/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

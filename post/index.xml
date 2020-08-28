@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | Yuri Pritykin</title>
+    <link>https://pritykin.github.io/post/</link>
+      <atom:link href="https://pritykin.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>https://pritykin.github.io/media/YuriPritykin.jpg</url>
+      <title>Posts</title>
+      <link>https://pritykin.github.io/post/</link>
+    </image>
+    
+  </channel>
+</rss>

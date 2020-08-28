@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Christina S. Leslie | Yuri Pritykin</title>
+    <link>https://pritykin.github.io/author/christina-s.-leslie/</link>
+      <atom:link href="https://pritykin.github.io/author/christina-s.-leslie/index.xml" rel="self" type="application/rss+xml" />
+    <description>Christina S. Leslie</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Feb 2019 00:00:00 -0500</lastBuildDate>
+    <image>
+      <url>https://pritykin.github.io/media/YuriPritykin.jpg</url>
+      <title>Christina S. Leslie</title>
+      <link>https://pritykin.github.io/author/christina-s.-leslie/</link>
+    </image>
+    
+    <item>
+      <title>Transcription factor Foxp1 regulates Foxp3 chromatin binding and coordinates regulatory T cell function</title>
+      <link>https://pritykin.github.io/publication/2019-nat-immunol-foxp-1-foxp-3-treg/</link>
+      <pubDate>Fri, 01 Feb 2019 00:00:00 -0500</pubDate>
+      <guid>https://pritykin.github.io/publication/2019-nat-immunol-foxp-1-foxp-3-treg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ILC1 Confer Early Host Protection at Initial Sites of Viral Infection</title>
+      <link>https://pritykin.github.io/publication/2017-cell-ilc-weizman/</link>
+      <pubDate>Wed, 01 Nov 2017 00:00:00 -0400</pubDate>
+      <guid>https://pritykin.github.io/publication/2017-cell-ilc-weizman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cancer Immunosurveillance by Tissue-Resident Innate Lymphoid Cells and Innate-like T Cells</title>
+      <link>https://pritykin.github.io/publication/2016-cell-ilc-dadi/</link>
+      <pubDate>Thu, 28 Jan 2016 00:00:00 -0500</pubDate>
+      <guid>https://pritykin.github.io/publication/2016-cell-ilc-dadi/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

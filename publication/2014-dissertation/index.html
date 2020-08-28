@@ -1,0 +1,1166 @@
+<!DOCTYPE html><html lang="en-us" >
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Yuri Pritykin">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="The availability of functional genomics data sets
+for numerous organisms provides an opportunity to comprehensively analyze the roles proteins play in the functional organization of the cell.
+
+In the first part of this thesis, we study how simple network features of hub proteins
+(i.e., those with many physical interactions)
+are predictive of their roles in the functional organization of the cell.
+We begin by examining an influential but controversial characterization of the dynamic modularity of the *S. cerevisiae* interactome that incorporated gene expression data into network analysis.
+We analyze the protein-protein interaction networks of five organisms---*S. cerevisiae*, *H. sapiens*, *D. melanogaster*, *A. thaliana*, and *E. coli*---and confirm significant and consistent functional and structural differences between hub proteins that are co-expressed with their interacting partners and those that are not, and support the view that the former tend to be intramodular within networks whereas the latter tend to be intermodular. However, we also demonstrate that in each of these organisms, simple topological measures are significantly correlated with the average co-expression of a hub with its partners
+and therefore also reflect protein intra- and inter-modularity. Further, cross-interactomic analysis demonstrates that these simple topological characteristics of hub proteins tend to be conserved across organisms. Overall, we give evidence that purely topological features of static interaction networks reflect aspects of the dynamics and modularity of interactomes as well as previous measures incorporating expression data, and are a powerful means for understanding the dynamic roles of hubs in interactomes.
+
+In the second part of this thesis, we study the role of multifunctional genes (and the proteins they encode) 
+in the functional organization of the cell.
+Many genes can play a role in multiple biological processes or molecular functions.
+Identifying multifunctional genes at a genome-wide level and
+studying their properties can shed light on the complexity
+of the molecular events that underpin cellular function,
+leading to a better understanding of the functional landscape of the cell.
+However, to date, genome-wide analysis of multifunctional genes has been limited. 
+Here we introduce a computational approach that uses known functional annotations
+to extract genes playing a role in at least two distinct 
+biological processes, and compare them
+with the remaining annotated genes.
+We leverage functional genomics data sets for three organisms---*H. sapiens*,
+*D. melanogaster*, and *S. cerevisiae*---and
+show that, as compared to other genes, genes involved in multiple biological processes
+possess distinct physicochemical properties, are more broadly expressed,
+tend to be intermodular in protein interaction networks, tend to be more evolutionarily conserved and are more likely to be essential.
+We also find that multifunctional genes are significantly more likely to be involved in human disorders.
+These same features also hold for genes with multiple molecular functions.
+Our analysis is a step towards a better genome-wide understanding
+of gene multifunctionality.
+
+Overall, the results presented in this thesis lead to a better understanding of the complex functional roles that proteins play within the cell.
+">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://pritykin.github.io/publication/2014-dissertation/">
+
+  
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3f51b5">
+  
+
+  
+  
+
+  
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+    
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+    
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138603211-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url, target) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           if (target !== '_blank') {
+             document.location = url;
+           }
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target, event.target.getAttribute('target'));  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-138603211-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
+
+
+  
+
+
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://pritykin.github.io/publication/2014-dissertation/">
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@YuriPritykin">
+  <meta property="twitter:creator" content="@YuriPritykin">
+  
+  <meta property="og:site_name" content="Yuri Pritykin">
+  <meta property="og:url" content="https://pritykin.github.io/publication/2014-dissertation/">
+  <meta property="og:title" content="Classifications of protein roles in the functional organization of the cell | Yuri Pritykin">
+  <meta property="og:description" content="The availability of functional genomics data sets
+for numerous organisms provides an opportunity to comprehensively analyze the roles proteins play in the functional organization of the cell.
+
+In the first part of this thesis, we study how simple network features of hub proteins
+(i.e., those with many physical interactions)
+are predictive of their roles in the functional organization of the cell.
+We begin by examining an influential but controversial characterization of the dynamic modularity of the *S. cerevisiae* interactome that incorporated gene expression data into network analysis.
+We analyze the protein-protein interaction networks of five organisms---*S. cerevisiae*, *H. sapiens*, *D. melanogaster*, *A. thaliana*, and *E. coli*---and confirm significant and consistent functional and structural differences between hub proteins that are co-expressed with their interacting partners and those that are not, and support the view that the former tend to be intramodular within networks whereas the latter tend to be intermodular. However, we also demonstrate that in each of these organisms, simple topological measures are significantly correlated with the average co-expression of a hub with its partners
+and therefore also reflect protein intra- and inter-modularity. Further, cross-interactomic analysis demonstrates that these simple topological characteristics of hub proteins tend to be conserved across organisms. Overall, we give evidence that purely topological features of static interaction networks reflect aspects of the dynamics and modularity of interactomes as well as previous measures incorporating expression data, and are a powerful means for understanding the dynamic roles of hubs in interactomes.
+
+In the second part of this thesis, we study the role of multifunctional genes (and the proteins they encode) 
+in the functional organization of the cell.
+Many genes can play a role in multiple biological processes or molecular functions.
+Identifying multifunctional genes at a genome-wide level and
+studying their properties can shed light on the complexity
+of the molecular events that underpin cellular function,
+leading to a better understanding of the functional landscape of the cell.
+However, to date, genome-wide analysis of multifunctional genes has been limited. 
+Here we introduce a computational approach that uses known functional annotations
+to extract genes playing a role in at least two distinct 
+biological processes, and compare them
+with the remaining annotated genes.
+We leverage functional genomics data sets for three organisms---*H. sapiens*,
+*D. melanogaster*, and *S. cerevisiae*---and
+show that, as compared to other genes, genes involved in multiple biological processes
+possess distinct physicochemical properties, are more broadly expressed,
+tend to be intermodular in protein interaction networks, tend to be more evolutionarily conserved and are more likely to be essential.
+We also find that multifunctional genes are significantly more likely to be involved in human disorders.
+These same features also hold for genes with multiple molecular functions.
+Our analysis is a step towards a better genome-wide understanding
+of gene multifunctionality.
+
+Overall, the results presented in this thesis lead to a better understanding of the complex functional roles that proteins play within the cell.
+"><meta property="og:image" content="https://pritykin.github.io/media/YuriPritykin.jpg">
+  <meta property="twitter:image" content="https://pritykin.github.io/media/YuriPritykin.jpg"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2014-09-20T00:00:00-04:00">
+    
+    <meta property="article:modified_time" content="2014-09-20T00:00:00-04:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://pritykin.github.io/publication/2014-dissertation/"
+  },
+  "headline": "Classifications of protein roles in the functional organization of the cell",
+  
+  "datePublished": "2014-09-20T00:00:00-04:00",
+  "dateModified": "2014-09-20T00:00:00-04:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Yuri Pritykin"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Yuri Pritykin",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://pritykin.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png"
+    }
+  },
+  "description": "The availability of functional genomics data sets\nfor numerous organisms provides an opportunity to comprehensively analyze the roles proteins play in the functional organization of the cell.\n\nIn the first part of this thesis, we study how simple network features of hub proteins\n(i.e., those with many physical interactions)\nare predictive of their roles in the functional organization of the cell.\nWe begin by examining an influential but controversial characterization of the dynamic modularity of the *S. cerevisiae* interactome that incorporated gene expression data into network analysis.\nWe analyze the protein-protein interaction networks of five organisms---*S. cerevisiae*, *H. sapiens*, *D. melanogaster*, *A. thaliana*, and *E. coli*---and confirm significant and consistent functional and structural differences between hub proteins that are co-expressed with their interacting partners and those that are not, and support the view that the former tend to be intramodular within networks whereas the latter tend to be intermodular. However, we also demonstrate that in each of these organisms, simple topological measures are significantly correlated with the average co-expression of a hub with its partners\nand therefore also reflect protein intra- and inter-modularity. Further, cross-interactomic analysis demonstrates that these simple topological characteristics of hub proteins tend to be conserved across organisms. Overall, we give evidence that purely topological features of static interaction networks reflect aspects of the dynamics and modularity of interactomes as well as previous measures incorporating expression data, and are a powerful means for understanding the dynamic roles of hubs in interactomes.\n\nIn the second part of this thesis, we study the role of multifunctional genes (and the proteins they encode) \nin the functional organization of the cell.\nMany genes can play a role in multiple biological processes or molecular functions.\nIdentifying multifunctional genes at a genome-wide level and\nstudying their properties can shed light on the complexity\nof the molecular events that underpin cellular function,\nleading to a better understanding of the functional landscape of the cell.\nHowever, to date, genome-wide analysis of multifunctional genes has been limited. \nHere we introduce a computational approach that uses known functional annotations\nto extract genes playing a role in at least two distinct \nbiological processes, and compare them\nwith the remaining annotated genes.\nWe leverage functional genomics data sets for three organisms---*H. sapiens*,\n*D. melanogaster*, and *S. cerevisiae*---and\nshow that, as compared to other genes, genes involved in multiple biological processes\npossess distinct physicochemical properties, are more broadly expressed,\ntend to be intermodular in protein interaction networks, tend to be more evolutionarily conserved and are more likely to be essential.\nWe also find that multifunctional genes are significantly more likely to be involved in human disorders.\nThese same features also hold for genes with multiple molecular functions.\nOur analysis is a step towards a better genome-wide understanding\nof gene multifunctionality.\n\nOverall, the results presented in this thesis lead to a better understanding of the complex functional roles that proteins play within the cell.\n"
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Classifications of protein roles in the functional organization of the cell | Yuri Pritykin</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class=" ">
+
+  
+  
+  
+  
+    <script>const isSiteThemeDark = false;</script>
+  
+  
+  <script src="/js/load-theme.js"></script>
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Yuri Pritykin</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Yuri Pritykin</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+
+  <div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>Classifications of protein roles in the functional organization of the cell</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span class="font-weight-bold">Yuri Pritykin</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    September 2014
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="/files/2014-dissertation.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract"><p>The availability of functional genomics data sets
+for numerous organisms provides an opportunity to comprehensively analyze the roles proteins play in the functional organization of the cell.</p>
+<p>In the first part of this thesis, we study how simple network features of hub proteins
+(i.e., those with many physical interactions)
+are predictive of their roles in the functional organization of the cell.
+We begin by examining an influential but controversial characterization of the dynamic modularity of the <em>S. cerevisiae</em> interactome that incorporated gene expression data into network analysis.
+We analyze the protein-protein interaction networks of five organisms&mdash;<em>S. cerevisiae</em>, <em>H. sapiens</em>, <em>D. melanogaster</em>, <em>A. thaliana</em>, and <em>E. coli</em>&mdash;and confirm significant and consistent functional and structural differences between hub proteins that are co-expressed with their interacting partners and those that are not, and support the view that the former tend to be intramodular within networks whereas the latter tend to be intermodular. However, we also demonstrate that in each of these organisms, simple topological measures are significantly correlated with the average co-expression of a hub with its partners
+and therefore also reflect protein intra- and inter-modularity. Further, cross-interactomic analysis demonstrates that these simple topological characteristics of hub proteins tend to be conserved across organisms. Overall, we give evidence that purely topological features of static interaction networks reflect aspects of the dynamics and modularity of interactomes as well as previous measures incorporating expression data, and are a powerful means for understanding the dynamic roles of hubs in interactomes.</p>
+<p>In the second part of this thesis, we study the role of multifunctional genes (and the proteins they encode)
+in the functional organization of the cell.
+Many genes can play a role in multiple biological processes or molecular functions.
+Identifying multifunctional genes at a genome-wide level and
+studying their properties can shed light on the complexity
+of the molecular events that underpin cellular function,
+leading to a better understanding of the functional landscape of the cell.
+However, to date, genome-wide analysis of multifunctional genes has been limited.
+Here we introduce a computational approach that uses known functional annotations
+to extract genes playing a role in at least two distinct
+biological processes, and compare them
+with the remaining annotated genes.
+We leverage functional genomics data sets for three organisms&mdash;<em>H. sapiens</em>,
+<em>D. melanogaster</em>, and <em>S. cerevisiae</em>&mdash;and
+show that, as compared to other genes, genes involved in multiple biological processes
+possess distinct physicochemical properties, are more broadly expressed,
+tend to be intermodular in protein interaction networks, tend to be more evolutionarily conserved and are more likely to be essential.
+We also find that multifunctional genes are significantly more likely to be involved in human disorders.
+These same features also hold for genes with multiple molecular functions.
+Our analysis is a step towards a better genome-wide understanding
+of gene multifunctionality.</p>
+<p>Overall, the results presented in this thesis lead to a better understanding of the complex functional roles that proteins play within the cell.</p>
+</p>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            
+            
+            <a href="/publication/#7">
+              Thesis
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9"><em>PhD Thesis</em></div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+    
+      
+    
+    
+    
+    <div class="media author-card content-widget-hr">
+      
+        
+        <img class="avatar mr-3 avatar-circle" src="/author/yuri-pritykin/avatar_hue70c5190695c0fb208c1c12d3e6ef323_24079_270x270_fill_q90_lanczos_center.jpg" alt="Yuri Pritykin">
+      
+
+      <div class="media-body">
+        <h5 class="card-title"><a href="https://pritykin.github.io/">Yuri Pritykin</a></h5>
+        <h6 class="card-subtitle">Postdoctoral Research Associate</h6>
+        
+        <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?hl=en&amp;user=Arx56RkJBrYC&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/YuriPritykin" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/yuri-pritykin-5b290993" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://orcid.org/0000-0001-6589-981X" target="_blank" rel="noopener">
+        <i class="ai ai-orcid"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      </div>
+    </div>
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  </div>
+</div>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js" integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js" integrity="sha512-7t8APmYpzEsZP7CYoA7RfMPV9Bb+PJHa9x2WiUnDXZx3XHveuyWUtvNOexhkierl5flZ3tr92dP1mMS+SGlD+A==" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="/js/academic.min.7c0855509a679f5c89322b27a9552a2f.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+  </p>
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    Published with
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic Website Builder</a>
+    
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
